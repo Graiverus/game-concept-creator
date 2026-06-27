@@ -1,0 +1,3 @@
+# Concepts — authors' working folders are not committed to git.
+# Exceptions: test fixture (reference for the artifact format).
+concepts/*
