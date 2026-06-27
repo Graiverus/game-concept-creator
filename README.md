@@ -57,7 +57,6 @@ Agents live in `.claude/agents/<name>.md`.
 | **Claude Code** | the whole system | Host harness that runs the skills and agents | — |
 | **Tavily** (`tavily_search` / `tavily_research` / `tavily_extract`) | market-analyst | Primary market-research data source | ↓ |
 | **WebSearch / WebFetch** | market-analyst | Used when Tavily is unavailable or returns empty results | ↓ |
-| **Model knowledge** | market-analyst | Last resort when there is no internet at all | — |
 
 The analyst always follows this source chain in priority order and **states in the report header which source was actually used** — if it is not Tavily, it adds a caveat about reduced confidence. Treat that mark as a signal of how much to trust the data.
 
